@@ -1,0 +1,40 @@
+{
+    "equipment": [
+      {
+        "id": 1,
+        "name": "Bench Press",
+        "image": "",
+        "quantity": 10
+      },
+      {
+        "id": 2,
+        "name": "Squat Rack",
+        "image": "",
+        "quantity": 5
+      },
+      {
+        "id": 3,
+        "name": "Treadmill",
+        "image": "",
+        "quantity": 20
+      },
+      {
+        "id": 4,
+        "name": "Cable Machine",
+        "image": "",
+        "quantity": 8
+      },
+      {
+        "id": 5,
+        "name": "Dumbells",
+        "image": "",
+        "quantity": 10
+      },
+      {
+        "id": 6,
+        "name": "Row Machine",
+        "image": "",
+        "quantity": 10
+      }
+    ]
+}
