@@ -1,40 +1,63 @@
+
+
 {
     "equipment": [
       {
         "id": 1,
         "name": "Bench Press",
-        "image": "",
+        "image": "BenchPress.jpg",
         "quantity": 10
       },
       {
         "id": 2,
         "name": "Squat Rack",
-        "image": "",
+        "image": "SquatRack.jpg",
         "quantity": 5
       },
       {
         "id": 3,
         "name": "Treadmill",
-        "image": "",
+        "image": "Treadmill.jpg",
         "quantity": 20
       },
       {
         "id": 4,
         "name": "Cable Machine",
-        "image": "",
+        "image": "CableRow.jpg",
         "quantity": 8
       },
       {
         "id": 5,
         "name": "Dumbells",
-        "image": "",
+        "image": "Dumbells.jpg",
         "quantity": 10
       },
       {
         "id": 6,
-        "name": "Row Machine",
-        "image": "",
+        "name": "Ball Machine",
+        "image": "BallMachine.jpg",
         "quantity": 10
+      }
+    ],
+
+    "trainers": [ 
+      {
+        "name": "Phil McCracken",
+        "image": "Greg.jpeg",
+        "bio": "I didn't know what family was before S&J. All I used to have was my twin mattress and bed-bugs to keep me company. Like Ralph. But that all changed when I decided to go to S&J. It’s a real family, with weights! Come down and make friends with the staff. When you're ready to get your personal training on I am here to help. Not only will I help you hit your max goals and take pity on your personal shortcomings we are going to train your mind and send you back to therapy for that thing your parents did. So come on down to S&J cause you need help."
+      },
+      {
+        "name": "Adam.jpeg",
+        "image": "Adam.jpeg",
+        "bio": "Once upon a time I used to do bad things with the wrong people. It landed me in jail. Locked up, for some bud I got from some guy wearing a snap-back. After I served 10, I got out and wanted to change my life. Now I'm here at S&J making sure that you stay off the streets and you get in the gym. My workouts are prison court-yard style. That’s tough! We are using dumbbells, pull up bars, and good old cement to get through my workouts. When we are done, as a reward, it’s a pack of ramen-noodles for your post work out meal. Shrimp Flavor. See you in the gym!"
+      },
+      {
+        "name": "Kat Flowers",
+        "image": "Ix.jpeg",
+        "bio": "When I was little father made me wrestle bear. But bear did not want to fight. Bear was kind and wanted to be friends. How weak! We eat bear that night, and we never go hungry. At S&J we take on bears. We take on lion, and we take on lazy. With number 1 scientific meal plan of snake Protein and vodka we make you big and strong. Come on down to S&J and if you live through pain, then congratulations you get to do it again tomorrow."
       }
     ]
 }
+
+
+
