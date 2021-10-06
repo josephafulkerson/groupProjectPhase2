@@ -67,6 +67,12 @@
       "bloodType": "",
       "email": ""
       }
+    ],
+
+    "comments": [
+      {
+        "comment":  "test review"
+      }
     ]
 }
 

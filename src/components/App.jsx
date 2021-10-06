@@ -7,7 +7,6 @@ import Home from "./Home";
 import Trainers from "./Trainers";
 import { Route, Switch } from "react-router-dom";
 import { BASE_API_URL } from "../const";
-
 const Url = 'http://localhost:8000/equipment'
 
 
@@ -34,11 +33,8 @@ function App(addMember) {
       .then(resp => {setMembers([...members, resp])})
     }
     
-  
-
   return (
     <div>
-      <img src="public/images/sjfitness.png"/>
       <Header />
       <NavBar />
       <main>

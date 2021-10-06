@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState} from 'react'
+import swal from 'sweetalert'
 import NewMemberForm from './index.css'
+
 
 function JoinNow (addMember) {
 
@@ -14,7 +16,7 @@ function JoinNow (addMember) {
     const handleSubmit = (e) => {
         e.preventDefault() 
         const app = { firstName, lastName, phoneNumber, medals, bloodType, email}
-        console.log(app)
+        swal(`Thank you for Applying, ${firstName} ${lastName}!`, `You may get an email for the ${medals} membership but don't count on it.` , "success")
     }
 
     return (
@@ -39,9 +41,9 @@ function JoinNow (addMember) {
                     onChange={(e) => setMedals(e.target.value)}
                     >
                     <option value=""></option>
-                    <option value="Bronze">Bronze</option>
-                    <option value="Silver">Silver</option>
-                    <option value="Gold">Gold</option>
+                    <option value="Bronze">Bronze $100.00</option>
+                    <option value="Silver">Silver $500.00</option>
+                    <option value="Gold">Gold $1400.00</option>
                 </select>
             <label> Phone Number: </label>
                 <textarea 
