@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from 'react-router-dom'
 
 function Header() {
-    return (
-        <div>
-            <p>TEST</p>
-        </div>
-    )
+  return (
+      <div></div>
+  )
 }
 
-export default Header
+export default Header;

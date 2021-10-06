@@ -10,7 +10,7 @@ function GymCard({equipment}) {
         <div>
             <img src={equipmentImage} alt={name} width='200px' height='200px'/>
             <h3>{name}</h3>
-            <p>{quantity}</p>
+            <p>Quantity: {quantity}</p>
         </div>
     )
 }
