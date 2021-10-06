@@ -38,6 +38,7 @@ function App(addMember) {
 
   return (
     <div>
+      <img src="public/images/sjfitness.png"/>
       <Header />
       <NavBar />
       <main>
