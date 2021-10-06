@@ -29,4 +29,42 @@
     cursor: pointer;
   }
   
-  
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+ /* *{
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+} */
+
+.headerbar {
+  /* position: fixed;  */
+  padding: 500px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 5px solid #614e423a;
+  /* box-shadow: 0 8px 16px 0 rgba(218, 31, 31, 0.685); */
+}
+.headerbar h1 {
+  color: #5a5a64;
+}
+.headerbar .headerbar {
+  margin-left: auto;
+}
+.headerbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.headerbar:hover {
+  color: #3548f1;
+  border-bottom: 10px
+}
+.headerbar {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
