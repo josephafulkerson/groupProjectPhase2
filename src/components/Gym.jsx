@@ -6,7 +6,7 @@ function Gym() {
     const [ equipment, setEquipment ] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:8000/equipment')
+        fetch('/equipment')
         .then(r => r.json())
         .then(data => setEquipment(data))
     }, [])

@@ -1,5 +1,5 @@
 import React from 'react'
-import useState from 'react'
+import {useState} from 'react'
 
 function JoinNow (addMember) {
 
@@ -17,9 +17,9 @@ function JoinNow (addMember) {
     }
 
     return (
-        <div className="newMemberForm">
+        <div className="NewMemberForm">
             <h2>Submit Application</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
             <label> First Name: </label>
                 <textarea 
                     type="text"
@@ -37,6 +37,7 @@ function JoinNow (addMember) {
                     value={medals}
                     onChange={(e) => setMedals(e.target.value)}
                     >
+                    <option value=""></option>
                     <option value="Bronze">Bronze</option>
                     <option value="Silver">Silver</option>
                     <optoin value="Gold">Gold</optoin>
@@ -60,6 +61,7 @@ function JoinNow (addMember) {
                     value={bloodType}
                     onChange={(e) => setBloodType(e.target.value)}
                     >
+                    <option value=""></option>    
                     <option value="Type A+">Type A+</option>
                     <option value="Type A-">Type A-</option>
                     <option value="Type B+">Type B+</option>
@@ -73,7 +75,7 @@ function JoinNow (addMember) {
                 {/* OnChange => setFormData */}
                 {/* Aler on submit */}
 
-            <input onSubmit={(e) => {addMember(firstName, lastName, phoneNumber, medals, bloodType, email);e.preventDefault()}} type="submit" value="Apply Now"/>
+            <input type="submit" value="Apply Now"/>
         </form>
         </div>
     )
