@@ -56,6 +56,17 @@
         "image": "Ix.jpeg",
         "bio": "When I was little father made me wrestle bear. But bear did not want to fight. Bear was kind and wanted to be friends. How weak! We eat bear that night, and we never go hungry. At S&J we take on bears. We take on lion, and we take on lazy. With number 1 scientific meal plan of snake Protein and vodka we make you big and strong. Come on down to S&J and if you live through pain, then congratulations you get to do it again tomorrow."
       }
+    ],
+
+    "Application": [
+      {
+      "firstName": " ", 
+      "lastName": " ",
+      "phoneNumber": " ", 
+      "medals": " ",
+      "bloodType": " ",
+      "email": " "
+      }
     ]
 }
 
