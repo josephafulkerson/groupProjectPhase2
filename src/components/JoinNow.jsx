@@ -51,7 +51,7 @@ function JoinNow (addMember) {
                 />
 
             <label> Email Address: </label>
-                <input 
+                <textarea 
                     type="email" 
                     name="description"
                     value={email}
