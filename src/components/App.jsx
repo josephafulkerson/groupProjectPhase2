@@ -1,7 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import JoinNow from "./JoinNow"
+import Gym from "./Gym";
+import Home from "./Home";
+import Trainers from "./Trainers";
+import { Route, Switch } from "react-router-dom";
+import { BASE_API_URL } from "../const";
 
 const Url = 'http://localhost:8000/equipment'
 
@@ -10,6 +15,13 @@ const Url = 'http://localhost:8000/equipment'
 function App(addMember) {
 
   const [members, setMembers] = useState([])
+  const [trainers, setTrainers] = useState([]);
+
+  useEffect(() => {
+    fetch(`${BASE_API_URL}/trainers`)
+      .then((r) => r.json())
+      .then((data) => setTrainers(data));
+  }, []);
 
   function addMember(newMember) {
     fetch(Url, {
@@ -28,6 +40,22 @@ function App(addMember) {
     <div>
       <Header />
       <NavBar />
+      <main>
+      <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/gym'>
+          <Gym />
+        </Route>
+        <Route exact path='/trainers'>
+          {trainers.map((item) => (
+            <Trainers trainerList={item} key={item.id} />
+          ))}
+        </Route>
+        <Route exact path='/join'>
+          <JoinNow />
+        </Route>
+        </main>
     </div>
   );
 }
