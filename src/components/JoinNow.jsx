@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import NewMemberForm from './index.css'
 
 function JoinNow (addMember) {
 
@@ -40,7 +41,7 @@ function JoinNow (addMember) {
                     <option value=""></option>
                     <option value="Bronze">Bronze</option>
                     <option value="Silver">Silver</option>
-                    <optoin value="Gold">Gold</optoin>
+                    <option value="Gold">Gold</option>
                 </select>
             <label> Phone Number: </label>
                 <textarea 
