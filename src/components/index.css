@@ -20,7 +20,7 @@
     box-sizing: border-box;
     display: block;
   }
-  .NewMemberForm button {
+  .NewMemberForm input {
     background: #f1356d;
     color: #fff;
     border: 0;
