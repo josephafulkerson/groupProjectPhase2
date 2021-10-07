@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <>
-      <img src={logo} width="400" height="200" style={{display: 'block', marginLeft:'auto', marginRight: 'auto', padding: '-10px'}}/>
+      <img src={logo} width="500" height="200" style={{display: 'block', marginLeft:'auto', marginRight: 'auto', marginBottom: '-85px', marginTop: '-25px'}}/>
       <div className="headerbar">
         <NavLink
           to="/"

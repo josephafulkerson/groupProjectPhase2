@@ -17,7 +17,6 @@ function App(addMember) {
   const [members, setMembers] = useState([])
   const [trainers, setTrainers] = useState([]);
   const [ facility, setFacility ] = useState([]);
-  const [ comments, setComments ] = useState([])
  
 
   useEffect(() => {
@@ -43,11 +42,7 @@ function App(addMember) {
       .then(data => setFacility(data)) 
   }, [])
 
-  useEffect(() => {
-    fetch('http://localhost:8000/comments')
-    .then(r => r.json())
-    .then(data => setComments(data))
-}, [])
+
 
 
   return (
