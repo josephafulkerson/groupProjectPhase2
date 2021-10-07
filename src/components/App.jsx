@@ -15,6 +15,7 @@ function App(addMember) {
 
   const [members, setMembers] = useState([])
   const [trainers, setTrainers] = useState([]);
+  const [ facility, setFacility ] = useState([]);
 
   useEffect(() => {
     fetch(`${BASE_API_URL}/trainers`)
@@ -32,6 +33,12 @@ function App(addMember) {
       .then(resp => resp.json())
       .then(resp => {setMembers([...members, resp])})
     }
+
+    useEffect(() => {
+      fetch(`${BASE_API_URL}/facility`)
+      .then(r => r.json())
+      .then(data => setFacility(data)) 
+  }, [])
     
   return (
     <div>
@@ -39,7 +46,7 @@ function App(addMember) {
       <NavBar />
       <main>
       <Route exact path='/'>
-          <Home />
+      {facility.map(stock => <Home facility={stock} key={stock.id} />)}
         </Route>
         <Route exact path='/gym'>
           <Gym />

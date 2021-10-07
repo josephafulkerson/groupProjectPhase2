@@ -22,8 +22,6 @@ function Trainers({trainerList}) {
          
     }
 
-
-    const renderComments = () => comments.map(item => <li>{item}</li>)
     return (
         <div>
             <img src={trainerImage} width='250px' height='250px' style={{borderRadius:"10%"}}/>

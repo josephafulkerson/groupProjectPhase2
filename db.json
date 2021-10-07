@@ -79,27 +79,27 @@
       {
         "id": 1,
         "name": "Building",
-        "image": "src/gymBuilding/Building.jpg"
+        "image": "Building.jpg"
       },
       {
         "id": 2,
         "name": "Concrete",
-        "image": "src/gymBuilding/Concrete.jpg"
+        "image": "Concrete.jpg"
       },
       {
         "id": 3,
         "name": "Field",
-        "image": "src/gymBuilding/Field.jpg"
+        "image": "Field.jpg"
       },
       {
         "id": 4,
         "name": "Field",
-        "image": "src/gymBuilding/Field.jpg"
+        "image": "Field.jpg"
       },
       {
         "id": 5,
         "name": "Bathroom",
-        "image": "src/gymBuilding/Bathroom.jpg"
+        "image": "Bathroom.jpg"
       }
     ]
 
