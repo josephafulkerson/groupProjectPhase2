@@ -9,12 +9,12 @@ function GymCard({equipment}) {
     let equipmentImage = images(`./${image}`).default;
    
     return (
-        <div style={{display: 'inline-block'}}>
+        <div  style={{display: 'inline-block'}}>
             <Wrapper>
             <img src={equipmentImage} alt={name} width='200px' height='200px' style={{borderRadius:"5%"}}/>
             </Wrapper>
             <h3>{name}</h3>
-            <button onClick={() => setShowBtn(showBtn => !showBtn)}>{showBtn ? 'Hide Info' : 'More Info'}</button>
+            <button ClassName="Gym-info" onClick={() => setShowBtn(showBtn => !showBtn)}>{showBtn ? 'Hide Info' : 'More Info'}</button>
             {showBtn ? 
             <div>
             <p>Quantity: {quantity}</p>
