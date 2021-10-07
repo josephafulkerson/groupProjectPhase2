@@ -7,9 +7,9 @@
         "name": "Bench Press",
         "image": "BenchPress.jpg",
         "quantity": 10,
-        "moreInfo": "lift haeavy or go home",
-        "weightMax": "",
-        "muscleGroup": "",
+        "moreInfo": "Ain't Nothing But a Peanut!",
+        "weightMax": "550lbs",
+        "muscleGroup": "Everything If You're Smart",
         "SJCert": "💪🔥💪🏾"
       },
       {
@@ -17,9 +17,9 @@
         "name": "Squat Rack",
         "image": "SquatRack.jpg",
         "quantity": 5,
-        "moreInfo": "",
-        "weightMax": "",
-        "muscleGroup": "",
+        "moreInfo": "Pick Things Up, Put Things Down!",
+        "weightMax": "1000lbs",
+        "muscleGroup": "Peaches",
         "SJCert": "💪🔥💪🏾"
       },
       {
@@ -27,9 +27,9 @@
         "name": "Treadmill",
         "image": "Treadmill.jpg",
         "quantity": 20,
-        "moreInfo": "",
-        "weightMax": "",
-        "muscleGroup": "",
+        "moreInfo": "Run Away From Your Problems!",
+        "weightMax": "Whatever it is, you're losing it",
+        "muscleGroup": "Full Body Burn",
         "SJCert": "💪🔥💪🏾"
       },
       {
@@ -37,9 +37,9 @@
         "name": "Cable Machine",
         "image": "CableRow.jpg",
         "quantity": 8,
-        "moreInfo": "",
-        "weightMax": "",
-        "muscleGroup": "",
+        "moreInfo": "Tie up your worries!",
+        "weightMax": "300lbs",
+        "muscleGroup": "Back Attack",
         "SJCert": "💪🔥💪🏾"
       },
       {
@@ -47,9 +47,9 @@
         "name": "Dumbells",
         "image": "Dumbells.jpg",
         "quantity": 10,
-        "moreInfo": "",
-        "weightMax": "",
-        "muscleGroup": "",
+        "moreInfo": "Are you dumb?",
+        "weightMax": "5lbs-200lbs",
+        "muscleGroup": "Ramen Noodle Arms",
         "SJCert": "💪🔥💪🏾"
       },
       {
@@ -57,9 +57,9 @@
         "name": "Ball Machine",
         "image": "BallMachine.jpg",
         "quantity": 10,
-        "moreInfo": "",
-        "weightMax": "",
-        "muscleGroup": "",
+        "moreInfo": "It's A Mini Planet Earth",
+        "weightMax": "Pop",
+        "muscleGroup": "...BALL!",
         "SJCert": "💪🔥💪🏾"
       }
     ],
@@ -68,7 +68,7 @@
       {
         "name": "TESTNAME",
         "image": "test1.jpg",
-        "bio": "I didn't know what family was before S&J. All I used to have was my twin mattress and bed-bugs to keep me company. Like Ralph. But that all changed when I decided to go to S&J. It’s a real family, with weights! Come down and make friends with the staff. When you're ready to get your personal training on I am here to help. Not only will I help you hit your personal records. I will take pity on your personal shortcomings. We are going to train your body and mind,for that thing your parents did. So come on down to S&J cause you need help."
+        "bio": "I didn't know what family was before S&J. All I used to have was my twin mattress and bed-bugs to keep me company. Like Ralph. But that all changed when I decided to go to S&J. It’s a real family, with weights! Come down and make friends with the staff. When you're ready to get your personal training on I am here to help. Not only will I help you hit your personal records. I will take pity on your personal shortcomings. We are going to train your body and your mind, for that thing your parents did. So come on down to S&J, cause you need help!"
       },
       {
         "name": "TESTNAME",
