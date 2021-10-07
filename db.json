@@ -7,42 +7,60 @@
         "name": "Bench Press",
         "image": "BenchPress.jpg",
         "quantity": 10,
-        "more-info": ""
+        "moreInfo": "lift haeavy or go home",
+        "weightMax": "",
+        "muscleGroup": "",
+        "SJCert": "💪🔥💪🏾"
       },
       {
         "id": 2,
         "name": "Squat Rack",
         "image": "SquatRack.jpg",
         "quantity": 5,
-        "more-info": ""
+        "moreInfo": "",
+        "weightMax": "",
+        "muscleGroup": "",
+        "SJCert": "💪🔥💪🏾"
       },
       {
         "id": 3,
         "name": "Treadmill",
         "image": "Treadmill.jpg",
         "quantity": 20,
-        "more-info": ""
+        "moreInfo": "",
+        "weightMax": "",
+        "muscleGroup": "",
+        "SJCert": "💪🔥💪🏾"
       },
       {
         "id": 4,
         "name": "Cable Machine",
         "image": "CableRow.jpg",
         "quantity": 8,
-        "more-info": ""
+        "moreInfo": "",
+        "weightMax": "",
+        "muscleGroup": "",
+        "SJCert": "💪🔥💪🏾"
       },
       {
         "id": 5,
         "name": "Dumbells",
         "image": "Dumbells.jpg",
         "quantity": 10,
-        "more-info": ""
+        "moreInfo": "",
+        "weightMax": "",
+        "muscleGroup": "",
+        "SJCert": "💪🔥💪🏾"
       },
       {
         "id": 6,
         "name": "Ball Machine",
         "image": "BallMachine.jpg",
         "quantity": 10,
-        "more-info": ""
+        "moreInfo": "",
+        "weightMax": "",
+        "muscleGroup": "",
+        "SJCert": "💪🔥💪🏾"
       }
     ],
 

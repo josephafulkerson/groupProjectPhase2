@@ -7,6 +7,7 @@ import Home from "./Home";
 import Trainers from "./Trainers";
 import { Route, Switch } from "react-router-dom";
 import { BASE_API_URL } from "../const";
+import CommentCard from "./CommentCard";
 const Url = 'http://localhost:8000/equipment'
 
 
@@ -17,6 +18,7 @@ function App(addMember) {
   const [trainers, setTrainers] = useState([]);
   const [ facility, setFacility ] = useState([]);
   const [ comments, setComments ] = useState([])
+ 
 
   useEffect(() => {
     fetch(`${BASE_API_URL}/trainers`)
@@ -46,7 +48,8 @@ function App(addMember) {
     .then(r => r.json())
     .then(data => setComments(data))
 }, [])
-    
+
+
   return (
     <div>
       <Header />
@@ -62,6 +65,7 @@ function App(addMember) {
           {trainers.map((item) => (
             <Trainers trainerList={item} key={item.id} comments={comments}/>
           ))}
+          <CommentCard comment={comments} />
         </Route>
         <Route exact path='/join'>
           <JoinNow />
