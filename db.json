@@ -44,7 +44,7 @@
       {
         "name": "Phil McCracken",
         "image": "Greg.jpeg",
-        "bio": "I didn't know what family was before S&J. All I used to have was my twin mattress and bed-bugs to keep me company. Like Ralph. But that all changed when I decided to go to S&J. It’s a real family, with weights! Come down and make friends with the staff. When you're ready to get your personal training on I am here to help. Not only will I help you hit your max goals and take pity on your personal shortcomings we are going to train your mind and send you back to therapy for that thing your parents did. So come on down to S&J cause you need help."
+        "bio": "I didn't know what family was before S&J. All I used to have was my twin mattress and bed-bugs to keep me company. Like Ralph. But that all changed when I decided to go to S&J. It’s a real family, with weights! Come down and make friends with the staff. When you're ready to get your personal training on I am here to help. Not only will I help you hit your personal records. I will take pity on your personal shortcomings. We are going to train your body and mind,for that thing your parents did. So come on down to S&J cause you need help."
       },
       {
         "name": "Willie B. Hardigan",
@@ -54,7 +54,7 @@
       {
         "name": "Kat Flowers",
         "image": "Ix.jpeg",
-        "bio": "When I was little father made me wrestle bear. But bear did not want to fight. Bear was kind and wanted to be friends. How weak! We eat bear that night, and we never go hungry. At S&J we take on bears. We take on lion, and we take on lazy. With number 1 scientific meal plan of snake Protein and vodka we make you big and strong. Come on down to S&J and if you live through pain, then congratulations you get to do it again tomorrow."
+        "bio": "When I was little father made me wrestle bear. But bear did not want to fight. Bear was kind and wanted to be friend. Weak bear! We eat that night, and we never go hungry. Never be bear. At S&J we take on bears. We take on lion, and we take on lazy. With number 1 scientific meal plan of snake protein and vodka we make you big and strong. Come on down to S&J and if you live through pain. If you make it congratulations you get to do it again tomorrow."
       }
     ],
 
@@ -73,8 +73,43 @@
       {
         "comment":  "test review"
       }
+    ],
+
+    "facility": [
+      {
+        "id": 1,
+        "name": "Building",
+        "image": "src/gymBuilding/Building.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Concrete",
+        "image": "src/gymBuilding/Concrete.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Field",
+        "image": "src/gymBuilding/Field.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Field",
+        "image": "src/gymBuilding/Field.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Bathroom",
+        "image": "src/gymBuilding/Bathroom.jpg"
+      }
     ]
+
+
+
 }
+
+
+
+
 
 
 
