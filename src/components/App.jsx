@@ -16,6 +16,7 @@ function App(addMember) {
   const [members, setMembers] = useState([])
   const [trainers, setTrainers] = useState([]);
   const [ facility, setFacility ] = useState([]);
+  const [ comments, setComments ] = useState([])
 
   useEffect(() => {
     fetch(`${BASE_API_URL}/trainers`)
@@ -39,6 +40,12 @@ function App(addMember) {
       .then(r => r.json())
       .then(data => setFacility(data)) 
   }, [])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/comments')
+    .then(r => r.json())
+    .then(data => setComments(data))
+}, [])
     
   return (
     <div>
@@ -53,7 +60,7 @@ function App(addMember) {
         </Route>
         <Route exact path='/trainers'>
           {trainers.map((item) => (
-            <Trainers trainerList={item} key={item.id} />
+            <Trainers trainerList={item} key={item.id} comments={comments}/>
           ))}
         </Route>
         <Route exact path='/join'>
