@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import CommentCard from "./CommentCard";
 
-
-function Trainers({ trainerList, comments }) {
+function Trainers({ trainerList }) {
   const { name, image, bio } = trainerList;
   const [showBio, setShowBio] = useState(false);
   const [review, setReview] = useState("");
-
 
   const images = require.context("../trainerPhotos", true);
   let trainerImage = images(`./${image}`).default;
@@ -15,27 +12,26 @@ function Trainers({ trainerList, comments }) {
     e.preventDefault();
   };
 
- 
-
   return (
-    <div>
+    <div className='trainer'>
       <img
         src={trainerImage}
         width="250px"
         height="250px"
         style={{ borderRadius: "10%" }}
       />
-      <h3>{name}</h3>
-      <button
-        style={{ marginLeft: "300px" }}
-        onClick={() => setShowBio((showBio) => !showBio)}
-      >
-        {showBio ? "Hide Bio" : "Show Bio"}
-      </button>
-      {showBio ? <p>{bio}</p> : null}
+      <div>
+        <h3>{name}</h3>
+        <button
+          style={{ marginLeft: "300px" }}
+          onClick={() => setShowBio((showBio) => !showBio)}
+        >
+          {showBio ? "Hide Bio" : "Show Bio"}
+        </button>
+        {showBio ? <p>{bio}</p> : null}
+      </div>
     </div>
   );
 }
 
 export default Trainers;
-

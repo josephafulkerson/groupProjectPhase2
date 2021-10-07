@@ -1,36 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
-const CommentCard = ({comment}) => {
+const CommentCard = ({comments}) => {
 
-    const [review, setReview] = useState("");
-    const [ comments, setComments ] = useState([]);
-  
-    useEffect(() => {
-        fetch('http://localhost:8000/comments')
-        .then(r => r.json())
-        .then(data => setComments(data))
-    }, [])
-  
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-    }; 
 
-    console.log(comment)
     return (
-        <form onSubmit={handleSubmit}>
-        <div className="commentbtn">
-          <h2>Want to Leave a Review?</h2>
-          <label> Leave Comment </label>
-          <textarea
-            type="text"
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
-          />
-        </div>
-        <input type="submit" value="Submit Comment" />
-      </form>
+        <>
+        <h4>Comments:</h4>
+        <ul>
+            {comments.map(item => <li style={{padding: '5px'}}>{item.comment}</li>)}
+        </ul>
+        </>
     )
 }
 
-export default CommentCard
+export default CommentCard;

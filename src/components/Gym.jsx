@@ -18,8 +18,7 @@ function Gym() {
 
 
     return (
-        <div>
-            <p>TEST</p>
+        <div className='gymContainer'>
             {equipment.map(items => <GymCard equipment={items} key={items.id} />)}
         </div>
     )

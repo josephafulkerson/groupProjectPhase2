@@ -7,7 +7,7 @@ import Home from "./Home";
 import Trainers from "./Trainers";
 import { Route, Switch } from "react-router-dom";
 import { BASE_API_URL } from "../const";
-import CommentCard from "./CommentCard";
+import Comments from "./Comments";
 const Url = 'http://localhost:8000/equipment'
 
 
@@ -17,6 +17,8 @@ function App(addMember) {
   const [members, setMembers] = useState([])
   const [trainers, setTrainers] = useState([]);
   const [ facility, setFacility ] = useState([]);
+  const [ comments, setComments ] = useState([]);
+ 
  
 
   useEffect(() => {
@@ -42,6 +44,22 @@ function App(addMember) {
       .then(data => setFacility(data)) 
   }, [])
 
+  useEffect(() => {
+    fetch('http://localhost:8000/comments')
+    .then(r => r.json())
+    .then(data => setComments(data))
+}, [])
+
+function addComment(newComment) {fetch('http://localhost:8000/comments', {
+  method: "POST",
+  headers: { 'Content-Type': 'application/json'},
+  body: JSON.stringify({
+    comment: newComment
+  })
+})
+.then(r => r.json())
+.then(data => setComments([...comments, data]))
+}
 
 
 
@@ -58,9 +76,9 @@ function App(addMember) {
         </Route>
         <Route exact path='/trainers'>
           {trainers.map((item) => (
-            <Trainers trainerList={item} key={item.id} comments={comments}/>
+            <Trainers trainerList={item} key={item.id} />
           ))}
-          <CommentCard comment={comments} />
+          <Comments comments={comments} addComment={addComment}/>
         </Route>
         <Route exact path='/join'>
           <JoinNow />

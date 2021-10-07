@@ -9,7 +9,7 @@ function GymCard({equipment}) {
     let equipmentImage = images(`./${image}`).default;
    
     return (
-        <div style={{display: 'inline-block'}}>
+        <div className='gymCard'>
             <Wrapper>
             <img src={equipmentImage} alt={name} width='200px' height='200px' style={{borderRadius:"5%"}}/>
             </Wrapper>
@@ -17,11 +17,11 @@ function GymCard({equipment}) {
             <button onClick={() => setShowBtn(showBtn => !showBtn)}>{showBtn ? 'Hide Info' : 'More Info'}</button>
             {showBtn ? 
             <ul>
-            <ul><strong>Quantity:</strong> {quantity}</ul>
-            <ul><strong>More Info:</strong> {moreInfo}</ul>
-            <ul><strong>Max Weight:</strong> {weightMax}</ul>
-            <ul><strong>Muscle Group:</strong> {muscleGroup}</ul>
-            <ul><strong>S & J Certified:</strong> {SJCert}</ul>
+            <li><strong>Quantity:</strong> {quantity}</li>
+            <li><strong>More Info:</strong> {moreInfo}</li>
+            <li><strong>Max Weight:</strong> {weightMax}</li>
+            <li><strong>Muscle Group:</strong> {muscleGroup}</li>
+            <li><strong>S & J Certified:</strong> {SJCert}</li>
             </ul>
             :
             null }

@@ -99,3 +99,27 @@
     border-radius: 8px;
     cursor: pointer;
   }
+
+  .trainer {
+    display: flex;
+    margin: 10px 0px;
+  }
+
+  .trainer img {
+    margin-right: 10px;
+  }
+
+  .gymContainer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .gymCard {
+    flex: 0 0 33%;
+    text-align: center;
+  }
+
+  .gymCard ul  {
+    list-style: none;
+    padding: 0;
+  }
