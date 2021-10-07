@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const CommentCard = ({comment}) => {
 
-  
-
     const [review, setReview] = useState("");
+    const [ comments, setComments ] = useState([]);
   
+    useEffect(() => {
+        fetch('http://localhost:8000/comments')
+        .then(r => r.json())
+        .then(data => setComments(data))
+    }, [])
   
   
     const handleSubmit = (e) => {

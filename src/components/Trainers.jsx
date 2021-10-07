@@ -33,7 +33,6 @@ function Trainers({ trainerList, comments }) {
         {showBio ? "Hide Bio" : "Show Bio"}
       </button>
       {showBio ? <p>{bio}</p> : null}
-      {/* <CommentCard comment={comments} trainerList={trainerList}/> */}
     </div>
   );
 }

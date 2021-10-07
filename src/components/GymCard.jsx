@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components';
 
 function GymCard({equipment}) {
-    const { name, quantity, image, moreInfo, SJCert } = equipment
+    const { name, quantity, image, moreInfo, SJCert, weightMax, muscleGroup } = equipment
     const [ showBtn, setShowBtn ] = useState(false)
 
     const images = require.context('../gymEquipment', true)
@@ -16,11 +16,13 @@ function GymCard({equipment}) {
             <h3>{name}</h3>
             <button onClick={() => setShowBtn(showBtn => !showBtn)}>{showBtn ? 'Hide Info' : 'More Info'}</button>
             {showBtn ? 
-            <div>
-            <p>Quantity: {quantity}</p>
-            <p>{moreInfo}</p>
-            <p>S & J Certified: {SJCert}</p>
-            </div>
+            <ul>
+            <ul><strong>Quantity:</strong> {quantity}</ul>
+            <ul><strong>More Info:</strong> {moreInfo}</ul>
+            <ul><strong>Max Weight:</strong> {weightMax}</ul>
+            <ul><strong>Muscle Group:</strong> {muscleGroup}</ul>
+            <ul><strong>S & J Certified:</strong> {SJCert}</ul>
+            </ul>
             :
             null }
         </div>
