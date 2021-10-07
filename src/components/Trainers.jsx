@@ -5,6 +5,7 @@ function Trainers({trainerList}) {
     const { name, image, bio } = trainerList
     const [ showBio, setShowBio ] = useState(false)
     const [ comments, setComments ] = useState([])
+    const [review, setReview] = useState("")
 
 
     const images = require.context('../trainerPhotos', true)
@@ -16,6 +17,11 @@ function Trainers({trainerList}) {
         .then(data => setComments(data))
     }, [])
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+         
+    }
+
 
     const renderComments = () => comments.map(item => <li>{item}</li>)
     return (
@@ -24,12 +30,20 @@ function Trainers({trainerList}) {
             <h3>{name}</h3>
             <button style={{marginLeft: '300px'}} onClick={() => setShowBio(showBio => !showBio)}>{showBio ? 'Hide Bio' : 'Show Bio'}</button>
             {showBio ? <p>{bio}</p> : null}
-            <button style={{}}>Add Comment</button>
-            <form>
-                <input type='text' value='enter comment...'/>
-            </form>
-            <ul>{renderComments}</ul>
-        </div>
+            <form onSubmit={handleSubmit}>
+            <div className= "commentbtn">
+            <h2>Want to Leave a Review?</h2>
+            <label> Leave Comment </label>
+                <textarea 
+                type="text"
+                value={review}
+                onChange={(e) => setReview(e.target.value)}
+                />
+            </div>
+            <input type="submit" value="Submit Comment"/>
+        </form>
+    </div>
+
     )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
+
 const Home = ({facility}) => {
     const {id, name, image} = facility
 

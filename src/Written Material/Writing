@@ -30,3 +30,29 @@ State of the art facilities such as, Gym. and feild. And the convinient bathroom
 
 
 Our trainers here are diversified and top notch. Personalized workouts catered to your fat by our staff who grew up on the streets of their home towns. Bears, mental health, and incarseration. You're in excellent hands, even if we have to sedate you, they have seen it all before. 
+
+
+
+
+{/* <form onSubmit={handleSubmit}>
+<div className= "commentbtn">
+<h2>Submit Application</h2>
+
+<label> Leave Comment </label>
+    <textarea 
+        type="text"
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
+    />
+    </div>
+</form>
+</div> */}
+
+
+
+ <button style={{}}>Add Comment</button>
+            <form>
+                <input type='text' value='enter comment...'/>
+            </form>
+            <ul>{renderComments}</ul>
+        </div>

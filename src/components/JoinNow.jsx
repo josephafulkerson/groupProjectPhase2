@@ -15,8 +15,11 @@ function JoinNow (addMember) {
 
     const handleSubmit = (e) => {
         e.preventDefault() 
+        
         const app = { firstName, lastName, phoneNumber, medals, bloodType, email}
+        // e.currentTarget.reset()
         swal(`Thank you for Applying, ${firstName} ${lastName}!`, `You may get an email for the ${medals} membership but don't count on it.` , "success")
+        
     }
 
     return (
