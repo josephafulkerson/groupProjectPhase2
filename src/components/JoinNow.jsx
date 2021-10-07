@@ -14,7 +14,8 @@ function JoinNow (addMember) {
     const [email, setEmail] = useState('')
 
     const handleSubmit = (e) => {
-        e.preventDefault() 
+        e.preventDefault()
+
         
         const app = { firstName, lastName, phoneNumber, medals, bloodType, email}
         // e.currentTarget.reset()
