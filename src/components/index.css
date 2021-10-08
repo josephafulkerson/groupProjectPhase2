@@ -1,3 +1,5 @@
+
+
 .NewMemberForm {
     max-width: 400px;
     margin: 0 auto;
@@ -31,12 +33,12 @@
   
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* base styles */
- /* *{
+
+  *{
   margin: 0;
   font-family: "Quicksand";
   color: #333;
-} */
+} 
 
 .headerbar {
   /* position: fixed;  */
@@ -122,4 +124,11 @@
   .gymCard ul  {
     list-style: none;
     padding: 0;
+  }
+
+  .home {
+    display: inline-flex;
+    padding: 50px;
+  
+
   }

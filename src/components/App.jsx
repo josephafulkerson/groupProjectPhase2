@@ -8,6 +8,8 @@ import Trainers from "./Trainers";
 import { Route, Switch } from "react-router-dom";
 import { BASE_API_URL } from "../const";
 import Comments from "./Comments";
+import logo from '../logo.png'
+import Info from "./Info";
 const Url = 'http://localhost:8000/equipment'
 
 
@@ -69,6 +71,7 @@ function addComment(newComment) {fetch('http://localhost:8000/comments', {
       <NavBar />
       <main>
       <Route exact path='/'>
+      <Info />
       {facility.map(stock => <Home facility={stock} key={stock.id} />)}
         </Route>
         <Route exact path='/gym'>
