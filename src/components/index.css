@@ -100,7 +100,6 @@
     cursor: pointer;
   }
 
-<<<<<<< HEAD
   .trainer {
     display: flex;
     margin: 10px 0px;
@@ -123,36 +122,4 @@
   .gymCard ul  {
     list-style: none;
     padding: 0;
-=======
-
-  .commentbtn {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .commentbtn label {
-    text-align: left;
-    display: block;
-  }
-  .commentbtn h2 {
-    font-size: 20px;
-    color: #f1356d;
-    margin-bottom: 30px;
-  }
-  .commentbtn input, .commentbtn textarea, .commentbtn select {
-    width: 100%;
-    padding: 6px 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    display: block;
-  }
-  .commentbtn input {
-    background: #f1356d;
-    color: #fff;
-    border: 0;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
->>>>>>> e9c65b5db3f2481f0a4189a51ec1f25ac7334423
   }

@@ -9,11 +9,7 @@ function GymCard({equipment}) {
     let equipmentImage = images(`./${image}`).default;
    
     return (
-<<<<<<< HEAD
         <div className='gymCard'>
-=======
-        <div  style={{display: 'inline-block'}}>
->>>>>>> e9c65b5db3f2481f0a4189a51ec1f25ac7334423
             <Wrapper>
             <img src={equipmentImage} alt={name} width='200px' height='200px' style={{borderRadius:"5%"}}/>
             </Wrapper>
