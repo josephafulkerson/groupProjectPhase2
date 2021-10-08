@@ -104,6 +104,10 @@
     {
       "id": 4,
       "comment": "One Word, BATHROOM."
+    },
+    {
+      "comment": "",
+      "id": 5
     }
   ],
   "facility": [

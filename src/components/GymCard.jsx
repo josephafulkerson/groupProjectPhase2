@@ -17,7 +17,7 @@ function GymCard({equipment}) {
             <button ClassName="Gym-info" onClick={() => setShowBtn(showBtn => !showBtn)}>{showBtn ? 'Hide Info' : 'More Info'}</button>
             {showBtn ? 
             <ul>
-            <li><strong>Quantity:</strong> {quantity}</li>
+            <li><strong>Quantity:</strong>{quantity}</li>
             <li><strong>More Info:</strong> {moreInfo}</li>
             <li><strong>Max Weight:</strong> {weightMax}</li>
             <li><strong>Muscle Group:</strong> {muscleGroup}</li>

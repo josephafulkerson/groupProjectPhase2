@@ -25,7 +25,6 @@ const Comments = ({comments, addComment }) => {
           />
         </div>
         <input id="judge" type="submit" value="Submit Comment" style={{display: 'block', marginRight: 'auto', marginLeft: 'auto'}} />
-        <button>Delete</button>
       </form>
       <CommentCard comments={comments} />
       </>

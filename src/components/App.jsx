@@ -1,5 +1,4 @@
 import React, {useState, useEffect } from "react";
-import NavBar from "./NavBar";
 import Header from "./Header";
 import JoinNow from "./JoinNow"
 import Gym from "./Gym";
@@ -64,9 +63,8 @@ function addComment(newComment) {fetch('http://localhost:8000/comments', {
 }
 
   return (
-    <div style={{backgroundImage: `url('https://media2.giphy.com/media/h4U8d8WuHeftRLADek/giphy.gif?cid=6c09b952u3xj8jp59y2uu9c8ogkhdjorlln8u0f4qzaff4mu&rid=giphy.gif&ct=s')`}}>
+    <div >
       <Header />
-      <NavBar />
       <main>
       <Route exact path='/'>
       <Info />

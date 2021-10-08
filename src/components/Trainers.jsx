@@ -22,14 +22,14 @@ function Trainers({ trainerList }) {
         style={{ borderRadius: "10%" }}
       />
       <div>
-        <h3>{name}</h3>
+        <h2>{name}</h2>
         <button id= "bioBttn"
           style={{ marginLeft: "300px" }} className= "bioBttn"
           onClick={() => setShowBio((showBio) => !showBio)}
         >
           {showBio ? "Hide Bio" : "Show Bio"} 
         </button>
-        {showBio ? <p>{bio}</p> : null}
+        {showBio ? <p><strong>{bio}</strong></p> : null}
       </div>
     </div>
   );

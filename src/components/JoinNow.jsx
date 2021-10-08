@@ -24,7 +24,7 @@ function JoinNow (addMember) {
     }
 
     return (
-        <div className="NewMemberForm" >
+        <div className="NewMemberForm" style={{backgroundImage: `url('https://i.pinimg.com/originals/b3/4c/fc/b34cfc79627ee61b72374e08d05bea1b.gif')`}} >
             <h2>Submit Application</h2>
             <form onSubmit={handleSubmit}>
             <label> First Name: </label>
