@@ -66,7 +66,7 @@ function addComment(newComment) {fetch('http://localhost:8000/comments', {
 
 
   return (
-    <div>
+    <div style={{backgroundImage: `url('https://cdn.dribbble.com/users/3514337/screenshots/14089458/cmyk-storm-lighting-bolt-glitch.gif')`}}>
       <Header />
       <NavBar />
       <main>
