@@ -76,7 +76,8 @@ function deleteComment(commentId) {
     method: 'DELETE'
   })
   .then(() => {
-    const remainingcomments = comments.filter( (c) =>c.id !== commentId)
+    const remainingComments = comments.filter( (c) =>c.id !== commentId)
+    setComments(remainingComments)
   })
 }
 
