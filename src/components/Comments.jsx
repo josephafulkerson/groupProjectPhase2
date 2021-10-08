@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react'
 import CommentCard from './CommentCard'
 
 
-const Comments = ({comments, addComment}) => {
+const Comments = ({comments, addComment, deleteComment}) => {
 
     const [review, setReview] = useState("");
-   
-  
    
 
     const handleSubmit = (e) => {
@@ -27,8 +25,9 @@ const Comments = ({comments, addComment}) => {
           />
         </div>
         <input id="judge" type="submit" value="Submit Comment" style={{display: 'block', marginRight: 'auto', marginLeft: 'auto'}} />
+        <button onClick = {() => deleteComment(id)}>Delete</button>
       </form>
-      <CommentCard comments={comments}/>
+      <CommentCard comments={comments} deleteComment={deleteComment}/>
       </>
 
     )
