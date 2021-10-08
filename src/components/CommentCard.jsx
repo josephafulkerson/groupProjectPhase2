@@ -1,5 +1,5 @@
 import React from 'react'
-const CommentCard = ({comments, deleteComment}) => {
+const CommentCard = ({comments}) => {
 
 
     return (

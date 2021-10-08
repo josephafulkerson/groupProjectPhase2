@@ -63,23 +63,6 @@ function addComment(newComment) {fetch('http://localhost:8000/comments', {
 .then(data => setComments([...comments, data]))
 }
 
-// function deleteComment(commentId){
-//   fetch('http://localhost:8000/comments' + commentId, {
-//     method: 'DELETE'
-//   }) .then(() => {
-//       const remainingcomments = comments.filter( (c) =>c.id !== commentId )
-//       setComments(remainingcomments)
-//   }
-
-function deleteComment(commentId) { 
-  fetch ('http://localhost:8000/comments' + '/' + commentId, {
-    method: 'DELETE'
-  })
-  .then(() => {
-    const remainingComments = comments.filter( (c) =>c.id !== commentId)
-    setComments(remainingComments)
-  })
-}
 
   return (
     <div style={{backgroundImage: `url('https://cdn.dribbble.com/users/3514337/screenshots/14089458/cmyk-storm-lighting-bolt-glitch.gif')`}}>
@@ -97,7 +80,7 @@ function deleteComment(commentId) {
           {trainers.map((item) => (
             <Trainers trainerList={item} key={item.id} />
           ))}
-          <Comments comments={comments} addComment={addComment} deleteComment={deleteComment} />
+          <Comments comments={comments} addComment={addComment} />
         </Route>
         <Route exact path='/join'>
           <JoinNow />
