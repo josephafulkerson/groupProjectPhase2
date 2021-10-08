@@ -63,9 +63,8 @@ function addComment(newComment) {fetch('http://localhost:8000/comments', {
 .then(data => setComments([...comments, data]))
 }
 
-
   return (
-    <div style={{backgroundImage: `url('https://cdn.dribbble.com/users/3514337/screenshots/14089458/cmyk-storm-lighting-bolt-glitch.gif')`}}>
+    <div style={{backgroundImage: `url('https://media2.giphy.com/media/h4U8d8WuHeftRLADek/giphy.gif?cid=6c09b952u3xj8jp59y2uu9c8ogkhdjorlln8u0f4qzaff4mu&rid=giphy.gif&ct=s')`}}>
       <Header />
       <NavBar />
       <main>

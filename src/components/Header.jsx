@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <>
+    <div>
       <img src={logo} width="500" height="200" style={{display: 'block', marginLeft:'auto', marginRight: 'auto', marginBottom: '-85px', marginTop: '-25px'}}/>
-      <div className="headerbar">
+      <div className="headerbar" >
         <NavLink
           to="/"
           style={{
@@ -48,7 +48,7 @@ function Header() {
           Join Now
         </NavLink>
       </div>
-    </>
+    </div>
   );
 }
 
