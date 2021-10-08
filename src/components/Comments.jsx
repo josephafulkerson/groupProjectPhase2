@@ -26,7 +26,7 @@ const Comments = ({comments, addComment}) => {
             onChange={(e) => setReview(e.target.value)}
           />
         </div>
-        <input type="submit" value="Submit Comment" style={{display: 'block', marginRight: 'auto', marginLeft: 'auto'}} />
+        <input id="judge" type="submit" value="Submit Comment" style={{display: 'block', marginRight: 'auto', marginLeft: 'auto'}} />
       </form>
       <CommentCard comments={comments}/>
       </>

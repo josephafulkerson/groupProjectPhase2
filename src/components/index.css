@@ -9,7 +9,13 @@
   }
   .NewMemberForm h2 {
     font-size: 20px;
-    color: #f1356d;
+    color: #183d81;
+    margin-bottom: 30px;
+  }
+
+  .commentbtn label {
+    font-size: 20px;
+    color: #183d81;
     margin-bottom: 30px;
   }
   .NewMemberForm input, .NewMemberForm textarea, .NewMemberForm select {
@@ -21,7 +27,7 @@
     display: block;
   }
   .NewMemberForm input {
-    background: #f1356d;
+    background: #183d81;
     color: #fff;
     border: 0;
     padding: 8px;
@@ -31,12 +37,12 @@
   
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* base styles */
- /* *{
+ * {
   margin: 0;
   font-family: "Quicksand";
   color: #333;
-} */
+  font-size: 20px
+} 
 
 .headerbar {
   /* position: fixed;  */
@@ -67,6 +73,14 @@
 }
 
 
+* button {
+  margin: 0;
+  font-family: "Quicksand";
+  color: rgb(11, 12, 90);
+  font-size: 20px
+} 
+
+
 
 
 .commentbtn {
@@ -80,25 +94,26 @@
   }
   .commentbtn h2 {
     font-size: 20px;
-    color: #f1356d;
+    color: #183d81;
     margin-bottom: 30px;
   }
   .commentbtn input, .commentbtn textarea, .commentbtn select {
     width: 100%;
     padding: 6px 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(221, 221, 221, 0.911);
     box-sizing: border-box;
     display: block;
   }
   .commentbtn input {
     background: #f1356d;
-    color: #fff;
+    color: rgba(24, 5, 58, 0);
     border: 0;
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
   }
+  /* #judge */
 
   .trainer {
     display: flex;
@@ -123,3 +138,17 @@
     list-style: none;
     padding: 0;
   }
+
+
+
+  /* trainer bbtn */
+
+  #bioBttn input {
+    background: #183d81;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

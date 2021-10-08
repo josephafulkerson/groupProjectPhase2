@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import bioBttn from "./index.css"
 
 function Trainers({ trainerList }) {
   const { name, image, bio } = trainerList;
@@ -22,11 +23,11 @@ function Trainers({ trainerList }) {
       />
       <div>
         <h3>{name}</h3>
-        <button
-          style={{ marginLeft: "300px" }}
+        <button id= "bioBttn"
+          style={{ marginLeft: "300px" }} className= "bioBttn"
           onClick={() => setShowBio((showBio) => !showBio)}
         >
-          {showBio ? "Hide Bio" : "Show Bio"}
+          {showBio ? "Hide Bio" : "Show Bio"} 
         </button>
         {showBio ? <p>{bio}</p> : null}
       </div>
